@@ -4,7 +4,7 @@ const isLogedIn = localStorage.getItem("isLogedIn");
 export const isLoggedInVar = makeVar(Boolean(isLogedIn));
 
 export const client = new ApolloClient({
-  uri: "http://146.56.189.84:4000",
+  uri: "https://movie-world-server.herokuapp.com/",
   cache: new InMemoryCache({
     typePolicies: {
       Query: {
